@@ -1,9 +1,10 @@
 import './App.css';
+import Footer from './component/reusable/Footer';
 
 function App() {
   return (
     <div className="App">
-      jk
+      <Footer/>
     </div>
   );
 }

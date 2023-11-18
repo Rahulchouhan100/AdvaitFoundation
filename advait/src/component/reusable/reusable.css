@@ -1,0 +1,192 @@
+/* -------- Footer Start ------------ */
+
+footer {
+  background-color: #0f172a;
+  padding: 20px;
+  font-family: "Inter var";
+}
+.footer_container {
+  display: grid;
+  grid-template-columns: 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 1fr;
+}
+.footer_container > .footer_box {
+  /* border: 2px solid red; */
+}
+.footer_container > .footer_box > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer_container > .footer_box > ul > h2 {
+  color: #f1f5f9;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.language {
+  color: #f1f5f9;
+}
+.footer_container > .footer_box > ul > li {
+  list-style: none;
+}
+.footer_container > .footer_box > ul > li > a {
+  color: #c3cad2;
+  text-decoration: none;
+}
+svg:hover path {
+  fill: red;
+}
+svg:hover path {
+  stroke: red;
+}
+.footer_container > .footer_box > ul > li > a:hover,
+.copyRight_section > .privacy > a:hover {
+  color: red;
+}
+.icon_container {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+.acharyaSirphoto {
+  width: 25px;
+  height: 25px;
+}
+.appstore {
+  width: 120px;
+  border: 1.4px solid rgba(255, 255, 255, 0.712);
+  border-radius: 0.375rem;
+}
+.appStore_mob > li{
+  list-style: none;
+  display: flex;
+  gap: 30px !important;
+}
+
+
+.copyRight_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 120px;
+  gap: 48px;
+  color: white;
+}
+.copyRight_section > .privacy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+.copyRight_section > .privacy > a {
+  color: #c3cad2;
+  font-size: 14px;
+  text-decoration: none;
+}
+.horizontol_line {
+  padding: 0px 160px;
+  margin: 20px 0;
+}
+hr.custom-hr {
+  border: 0.5px solid #c3cad2;
+  /* height: -; */
+}
+
+/* put in a tag all icon   */
+/* -------- Footer End ------------ */
+/******************** mobile phones (sm) ********************/
+
+@media only screen and (max-width: 480px) {
+  .footer_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .sm-hidden {
+    display: none !important;
+  }
+  .web_hidden {
+    display: inline-block !important;
+  }
+  .appStore_mob {
+    display: flex;
+    gap: 12px;
+  }
+  .copyRight_section {
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+    align-items: start;
+    margin-bottom: 32px;
+  }
+  .horizontol_line {
+    padding: 0;
+  }
+  .copyRight_section > .privacy {
+    font-size: 12px;
+  }
+  .copyRight_section > .privacy > a {
+    font-size: 12px;
+  }
+}
+
+/******************** mobile phones (lg) and small tablets ********************/
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+  .footer_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .sm-hidden {
+    display: none !important;
+  }
+  .web_hidden {
+    display: inline-block !important;
+  }
+  .appStore_mob {
+    display: flex;
+    gap: 20px;
+  }
+  .copyRight_section {
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+    align-items: start;
+    margin-bottom: 32px;
+  }
+  .horizontol_line {
+    padding: 0;
+  }
+}
+
+/******************** large tablets ********************/
+
+@media only screen and (max-width: 900px) and (min-width: 768px) {
+  .footer_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .sm-hidden {
+    display: none !important;
+  }
+  .web_hidden {
+    display: inline-block !important;
+  }
+  .appStore_mob {
+    display: flex;
+    gap: 12px;
+  }
+  .copyRight_section {
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+    align-items: start;
+    margin-bottom: 32px;
+  }
+  .horizontol_line {
+    padding: 0;
+  }
+}
