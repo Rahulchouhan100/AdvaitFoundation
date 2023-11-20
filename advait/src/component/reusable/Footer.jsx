@@ -203,7 +203,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="horizontol_line">
-        <hr class="custom-hr" />
+        <hr className="custom-hr" />
       </div>
       <div className="copyRight_section">
         <p className="privacy">

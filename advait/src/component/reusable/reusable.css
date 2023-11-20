@@ -1,3 +1,106 @@
+/* Video series Container start  */
+/* font-family: 'Noto Sans Devanagari', sans-serif; */
+
+.seriesContainer {
+  padding: 30px 40px;
+}
+.heading_series {
+  font-family: "Inter var";
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.542);
+  font-family: 600;
+}
+
+.videoSeriesBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding: 10px 0;
+}
+.unique_box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+}
+.unique_box:hover {
+  border-radius: 8px;
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+.unique_box > .series_title {
+  font-size: 18px !important;
+  font-weight: 500;
+  color: #1e293b !important;
+  font-family: "Noto Sans Devanagari", sans-serif;
+}
+.unique_box > .series_desc {
+  font-size: 16px;
+  font-family: "Noto Sans Devanagari", sans-serif;
+  color: #475569;
+}
+.unique_box > .duration,
+.contribution {
+  font-family: "Inter var";
+  font-size: 14px;
+  color: #475569;
+  font-weight: 400;
+}
+
+.unique_box > .language {
+  font-family: "Inter var";
+  background-color: #c7e6f8;
+  display: inline-block;
+  color: #334155;
+  width: max-content;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+.unique_box > .addtoCart {
+  display: flex;
+  gap: 12px;
+  font-family: "Inter var";
+}
+.addtoCarts,
+.enroll {
+  color: #eb5848;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+/* Video series Container end -------- */
+
+/* --- FAQ SECTION START ------- */
+/*  */
+.faq_container {
+  background-color: #fcfdfe;
+  padding: 42px 80px;
+  font-family: "Inter var";
+}
+.faq_section {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.support_redirection {
+  color: #e99c49;
+  font-weight: 500;
+  text-decoration: none;
+}
+.first_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 30%;
+}
+.accordion_container {
+  flex-basis: 60%;
+}
+
+/* FAQ SECTION END ------- */
+
 /* -------- Footer Start ------------ */
 
 footer {
@@ -57,12 +160,11 @@ svg:hover path {
   border: 1.4px solid rgba(255, 255, 255, 0.712);
   border-radius: 0.375rem;
 }
-.appStore_mob > li{
+.appStore_mob > li {
   list-style: none;
   display: flex;
   gap: 30px !important;
 }
-
 
 .copyRight_section {
   display: flex;
@@ -125,10 +227,39 @@ hr.custom-hr {
   }
   .copyRight_section > .privacy {
     font-size: 12px;
+    gap: 8px;
   }
   .copyRight_section > .privacy > a {
     font-size: 12px;
   }
+  /* --- FAQ SECTION START  */
+
+  .faq_section {
+    flex-direction: column;
+  }
+  .faq_container {
+    padding: 20px;
+  }
+  .break-tag {
+    display: none !important;
+  }
+
+  /* FAQ SECTION END ------- */
+
+  /* Video series Container start -------- */
+
+  .videoSeriesBox {
+    grid-template-columns: 1fr;
+  }
+  .seriesContainer {
+    padding: 30px 10px;
+  }
+  .unique_box {
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.511);
+    /* padding-bottom: 20px; */
+    padding: 4px 4px 20px 0;
+  }
+  /* Video series Container end -------- */
 }
 
 /******************** mobile phones (lg) and small tablets ********************/
@@ -159,6 +290,31 @@ hr.custom-hr {
   .horizontol_line {
     padding: 0;
   }
+  /* --- FAQ SECTION START  */
+
+  .faq_section {
+    flex-direction: column;
+  }
+  .faq_container {
+    padding: 20px;
+  }
+  .break-tag {
+    display: none !important;
+  }
+
+  /* FAQ SECTION END ------- */
+
+  .videoSeriesBox {
+    grid-template-columns: 1fr;
+  }
+  .seriesContainer {
+    padding: 30px 10px;
+  }
+  .unique_box {
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.511);
+    padding: 4px 4px 20px 0;
+  }
+  /* Video series Container end -------- */
 }
 
 /******************** large tablets ********************/
@@ -189,4 +345,27 @@ hr.custom-hr {
   .horizontol_line {
     padding: 0;
   }
+  /* --- FAQ SECTION START  */
+
+  .faq_section {
+    flex-direction: column;
+  }
+  .faq_container {
+    padding: 20px;
+  }
+  .break-tag {
+    display: none !important;
+  }
+
+  /* FAQ SECTION END ------- */
+  /* Video series Container start -------- */
+
+  .videoSeriesBox {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .unique_box {
+    padding: 4px;
+  }
+  /* Video series Container end -------- */
 }

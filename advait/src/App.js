@@ -1,10 +1,14 @@
-import './App.css';
-import Footer from './component/reusable/Footer';
+import "./App.css";
+import VideoSeries from "./component/VideoSeries";
+import Accordions from "./component/reusable/Accordions";
+import Footer from "./component/reusable/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Footer/>
+      <VideoSeries />
+      <Accordions />
+      <Footer />
     </div>
   );
 }
