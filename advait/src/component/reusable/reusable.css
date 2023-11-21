@@ -1,3 +1,165 @@
+/* ------------- navbar start  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 52px;
+  font-family: "Inter var";
+}
+.nav_list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.nav_list > li {
+  list-style: none;
+}
+.nav_list > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+/* swipebleDrawer  start  */
+.login {
+  color: #c22d01;
+  font-weight: 600;
+}
+.swipleDrawer {
+  width: 400px;
+  font-family: "Inter var";
+  position: relative;
+}
+.kkkkke {
+  position: absolute;
+  top: 0;
+  margin-left: -9px;
+}
+.listing_details > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 0 20px 0;
+}
+.more {
+  padding: 0 8px;
+  color: #475572;
+  text-transform: uppercase;
+}
+.listing_details > ul > li {
+  list-style: none;
+  /* border: 1px solid red; */
+  padding: 8px;
+  cursor: pointer;
+}
+.listing_details > ul > li:hover {
+  border-radius: 4px;
+  background-color: rgba(207, 207, 207, 0.635);
+}
+.listing_details > ul > li > a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+/* swipleDrawer end --------- */
+.getAccess_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  background-color: #1e293b;
+  font-family: "Inter var";
+}
+.message {
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+}
+.circle_red {
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 50%;
+  background-color: red;
+  border: 1px solid white;
+}
+.click_me_btn {
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid white;
+  outline: none;
+}
+
+/* navbar end --------------- */
+
+/* search bar container start  */
+.login_btn {
+  background-color: #ea580c;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.videoSeries_logo {
+  width: 100px;
+}
+.searchBar_container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 12px 52px;
+  position: sticky;
+  top: 0;
+  z-index: 9999999;
+  background-color: white;
+  /* border: 1px solid red; */
+}
+.all {
+  font-size: 12px;
+  color: #475569;
+  font-family: "Inter var";
+  padding: 0 4px;
+  font-weight: 600;
+}
+.searching_box {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* padding: 4px 8px; */
+  border-radius: 4px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.searchinput_box {
+  /* padding:10px 6px; */
+  outline: none;
+  border: none;
+  width: 360px;
+  padding-left: 10px;
+  caret-color: red;
+}
+.searchICon {
+  background-color: #fed7aa;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* padding: 0 !important;
+}*/
+.search_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Searchbar container end ------  */
+
 /* santWani container start --------- */
 .santwani_container {
   display: flex;
@@ -14,11 +176,10 @@
   color: #475569;
   font-weight: 500;
 }
-.breadCrumbs > span:first-child{
+.breadCrumbs > span:first-child {
   font-size: 14px;
-
 }
-.breadCrumbs > span:last-child{
+.breadCrumbs > span:last-child {
   font-family: "Noto Sans Devanagari", sans-serif;
   font-weight: 500;
 }
@@ -75,8 +236,9 @@
 /* Video series Container start  */
 
 .seriesContainer {
-  padding: 30px 40px;
+  padding: 30px 52px;
 }
+
 .heading_series {
   font-family: "Inter var";
   padding-bottom: 8px;
@@ -239,6 +401,12 @@
 .accordion_container {
   flex-basis: 60%;
 }
+.css-1pvvkxv-MuiButtonBase-root-MuiAccordionSummary-root {
+  padding: 0 !important;
+}
+.css-15v22id-MuiAccordionDetails-root {
+  padding: 10px 0 !important;
+}
 
 /* FAQ SECTION END ------- */
 
@@ -335,6 +503,30 @@ hr.custom-hr {
   border: 0.5px solid #c3cad2;
   /* height: -; */
 }
+.bottom_fixed {
+  background-color: #ffedd5;
+  position: fixed;
+  bottom: 0;
+  padding: 16px;
+  display: flex;
+  font-family: "Inter var";
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.download_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ea580c;
+  border: none;
+  font-family: "Inter var";
+  outline: none;
+  padding: 10px 20px;
+  gap: 4px;
+  color: white;
+  border-radius: 20px;
+}
 
 /* put in a tag all icon   */
 /* -------- Footer End ------------ */
@@ -410,6 +602,36 @@ hr.custom-hr {
   .santwani_container {
     flex-direction: column;
   }
+  /* navbar start  */
+  .nav_list {
+    display: none;
+  }
+  nav {
+    padding: 10px;
+  }
+
+  .message {
+    font-size: 14px;
+  }
+  .click_me_btn {
+    font-size: 14px;
+    padding: 4px;
+  }
+  .min_width{
+    flex-basis: 70%;
+  }
+  .getAccess_message {
+    justify-content: space-between;
+  }
+
+  /* navbar end --- */
+  /* // searching container  */
+  .searching_box {
+    display: none;
+  }
+  .searchBar_container {
+    padding: 12px;
+  }
 }
 
 /******************** mobile phones (lg) and small tablets ********************/
@@ -484,6 +706,9 @@ hr.custom-hr {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+  .bottom_fixed{
+    display: none;
+  }
   .sm-hidden {
     display: none !important;
   }
@@ -539,4 +764,93 @@ hr.custom-hr {
     grid-template-columns: 1fr 1fr;
   }
   /* Video series Container end -------- */
+
+  /* // footer start */
+  .bottom_fixed{
+    display: none;
+  }
+  /* footer end ------------- */
 }
+
+/* Dropdown CSS Start */
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  display: none;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+}
+
+.dropdown hr {
+  background-color: #e5e5e5;
+  border: 0;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.dropdown > li {
+  display: block;
+  padding: 0px 22px;
+  clear: both;
+  color: #333;
+  height: 48px;
+  line-height: 48px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.dropdown > li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.dropdown-submenu {
+  position: relative;
+  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23888" d="M10,17L15,12L10,7V17Z"></path></svg>')
+    97% / 24px no-repeat;
+}
+.dropdown-submenu .dropdown {
+  top: 0px;
+  left: 100%;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+.dropdown-submenu:hover > .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Dropdown CSS End */
+
+.parent:active,
+.parent:focus-within > .dropdown,
+open.dropdown {
+  display: block;
+  position: relative;
+}
+.menu {
+  height: 40px;
+  width: 100px;
+  background: #eee;
+  line-height: 40px;
+  text-align: center;
+  outline: 0;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.parent {
+  margin: 60px;
+  font-family: "Roboto", sans-serif;
+}
+

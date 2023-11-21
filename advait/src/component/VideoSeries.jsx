@@ -5,6 +5,7 @@ import twitterIcon from "../assest/twitterColor.svg";
 import linkedinIcon from "../assest/linkedinColor.svg";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
+
 const VideoSeries = () => {
   const [videoData, setvideoData] = useState([]);
   const [otherVideoData, setOtherVideoData] = useState([]);
@@ -34,6 +35,9 @@ const VideoSeries = () => {
   return (
     <div className="seriesContainer">
       <div>
+        {/*  search bar  */}
+
+       
         {/* संतवाणी */}
         <div>
           <div className="breadCrumbs">
@@ -63,22 +67,31 @@ const VideoSeries = () => {
           <div className="social_icon_container">
             <p className="share_series_title">Share the series</p>
             <div className="social_icon_box">
-              <img src={fbIcon} alt="fbIcon" className="socials_icon" />
-              <img
-                src={whatsappIcon}
-                alt="whatsappIcon"
-                className="socials_icon"
-              />
-              <img
-                src={twitterIcon}
-                alt="twitterIcon"
-                className="socials_icon"
-              />
-              <img
-                src={linkedinIcon}
-                alt="linkedinIcon"
-                className="socials_icon"
-              />
+              <a href="/">
+                <img src={fbIcon} alt="fbIcon" className="socials_icon" />
+              </a>
+
+              <a href="/">
+                <img
+                  src={whatsappIcon}
+                  alt="whatsappIcon"
+                  className="socials_icon"
+                />
+              </a>
+              <a href="/">
+                <img
+                  src={twitterIcon}
+                  alt="twitterIcon"
+                  className="socials_icon"
+                />
+              </a>
+              <a href="/">
+                <img
+                  src={linkedinIcon}
+                  alt="linkedinIcon"
+                  className="socials_icon"
+                />
+              </a>
             </div>
           </div>
         </div>
