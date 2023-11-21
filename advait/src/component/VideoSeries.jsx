@@ -5,7 +5,6 @@ import twitterIcon from "../assest/twitterColor.svg";
 import linkedinIcon from "../assest/linkedinColor.svg";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
-
 const VideoSeries = () => {
   const [videoData, setvideoData] = useState([]);
   const [otherVideoData, setOtherVideoData] = useState([]);
@@ -22,6 +21,7 @@ const VideoSeries = () => {
 
       const result = await response.json();
       setvideoData(result?.courses);
+      console.log(result?.courses);
       setOtherVideoData(result?.relatedContent);
       setSantWanidata(result?.details);
     } catch (error) {
@@ -37,7 +37,6 @@ const VideoSeries = () => {
       <div>
         {/*  search bar  */}
 
-       
         {/* संतवाणी */}
         <div>
           <div className="breadCrumbs">
@@ -107,8 +106,17 @@ const VideoSeries = () => {
                   key={index}
                   onClick={() => (window.location.href = "/")}
                 >
-                  <div className="bhaag">
-                    bhag {data?.series?.order?.seq || ""}
+                  <div
+                    className="bhaag"
+                    style={{
+                      backgroundColor: "#94a3b8",
+                      color: "white",
+                      width: "max-content",
+                      padding: "4px",
+                      borderRadius: "4px",
+                    }}
+                  >
+                    भाग {data?.series?.order?.seq || ""}
                   </div>
                   <h5 className="series_title">{data?.title || ""}</h5>
                   <p className="series_desc">{data?.subtitle || ""}</p>

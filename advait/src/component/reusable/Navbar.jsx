@@ -10,6 +10,7 @@ import callIcon from "../../assest/navCall.svg";
 import MenuIcon from "@mui/icons-material/Menu";
 import achryaSir from "../../assest/ic_favicon.png";
 import languageIcon from "../../assest/en.svg";
+import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 
 const Navbar = () => {
   const [navbarSwitch, setnavbarSwitch] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
     <>
       <div style={{ background: "#d24115" }}>
         <nav>
-          <div style={{display:"flex"}}>
+          <div style={{ display: "flex" }}>
             <img
               src={achryaSir}
               alt=""
@@ -60,10 +61,13 @@ const Navbar = () => {
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
               <div>
+                <button className="donate_btn">Donate</button>
+              </div>
+              <div>
                 <img src={languageIcon} alt="language selection" />{" "}
                 <ArrowDropDownIcon sx={{ color: "white" }} />
               </div>
-              <div>
+              <div className="call_icon">
                 <a href="/">
                   <img src={callIcon} alt="callicon" />
                 </a>
@@ -85,7 +89,10 @@ const Navbar = () => {
         </nav>
       </div>
       <div className="getAccess_message">
-        <div style={{ display: "flex", alignItems: "center", gap: "4px" }} className="min_width">
+        <div
+          style={{ display: "flex", alignItems: "center", gap: "4px" }}
+          className="min_width"
+        >
           <div className="circle_red"></div>
           <h2 className="message">
             Get access to all 350+ video series at once!
@@ -139,8 +146,14 @@ const Navbar = () => {
         onOpen={() => setnavbarSwitch(true)}
         className="swipleDrawer"
       >
-        <div style={{ width: "400px", padding: "20px" }}>
-          <div>
+        <div style={{ width: "320px", padding: "20px" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
             <a
               href="/"
               style={{
@@ -154,6 +167,7 @@ const Navbar = () => {
               <img src={userICon} alt="loginuser" />
               <span className="login">Login</span>
             </a>
+            <HighlightOffIcon onClick={() => setnavbarSwitch(false)} />
           </div>
           <Divider />
           <div className="listing_details">
@@ -241,7 +255,6 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <p className="kkkkke">hello</p>
         </div>
       </SwipeableDrawer>
     </>

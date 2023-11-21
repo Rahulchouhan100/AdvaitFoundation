@@ -14,6 +14,14 @@ nav {
 .nav_list > li {
   list-style: none;
 }
+.donate_btn {
+  outline: none;
+  padding: 4px 8px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+}
 .nav_list > li > a {
   text-decoration: none;
   color: white;
@@ -257,7 +265,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 20px;
+  padding: 12px;
 }
 .unique_box:hover {
   border-radius: 8px;
@@ -387,6 +395,10 @@ nav {
   justify-content: space-between;
   gap: 32px;
 }
+.css-1pvvkxv-MuiButtonBase-root-MuiAccordionSummary-root {
+  background-color: #fcfdfe !important;
+}
+
 .support_redirection {
   color: #e99c49;
   font-weight: 500;
@@ -414,7 +426,7 @@ nav {
 
 footer {
   background-color: #0f172a;
-  padding: 20px;
+  padding: 20px 20px 60px 20px;
   font-family: "Inter var";
 }
 .footer_container {
@@ -609,6 +621,9 @@ hr.custom-hr {
   nav {
     padding: 10px;
   }
+  .call_icon {
+    display: none;
+  }
 
   .message {
     font-size: 14px;
@@ -617,7 +632,7 @@ hr.custom-hr {
     font-size: 14px;
     padding: 4px;
   }
-  .min_width{
+  .min_width {
     flex-basis: 70%;
   }
   .getAccess_message {
@@ -696,6 +711,22 @@ hr.custom-hr {
     flex-direction: column;
   }
   /* Video series Container end -------- */
+
+  /* navbar start  */
+  .nav_list {
+    display: none;
+  }
+  nav {
+    padding: 10px;
+  }
+
+  /* // searching container  */
+  .searching_box {
+    display: none;
+  }
+  .searchBar_container {
+    padding: 12px;
+  }
 }
 
 /******************** large tablets ********************/
@@ -706,7 +737,7 @@ hr.custom-hr {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  .bottom_fixed{
+  .bottom_fixed {
     display: none;
   }
   .sm-hidden {
@@ -755,9 +786,19 @@ hr.custom-hr {
     grid-template-columns: 1fr 1fr;
   }
   /* Video series Container end -------- */
+  /* navbar start  */
+  .nav_list {
+    display: none;
+  }
+  nav {
+    padding: 10px;
+  }
+  .donate_btn {
+    display: none;
+  }
 }
 /******************** large tablets and laptops ********************/
-@media screen and (max-width: 1200px) and (min-width: 900px) {
+@media screen and (max-width: 1900px) and (min-width: 900px) {
   /* Video series Container start -------- */
 
   .otherhelpful_video_container {
@@ -766,10 +807,15 @@ hr.custom-hr {
   /* Video series Container end -------- */
 
   /* // footer start */
-  .bottom_fixed{
-    display: none;
+  .bottom_fixed {
+    display: none !important;
   }
   /* footer end ------------- */
+
+  /* navbar start ---------- */
+  .donate_btn {
+    display: none;
+  }
 }
 
 /* Dropdown CSS Start */
@@ -853,4 +899,3 @@ open.dropdown {
   margin: 60px;
   font-family: "Roboto", sans-serif;
 }
-
